@@ -1,0 +1,92 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "74b9eab5-b95d-4608-a99d-6b9a6b60c716": {
+        "id": "74b9eab5-b95d-4608-a99d-6b9a6b60c716",
+        "parent": null,
+        "name": "Retest485",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c7881392-174b-4894-9804-50eff2f14592"
+        ],
+        "isRemovable": false,
+        "filePath": "Retest485"
+      },
+      "c7881392-174b-4894-9804-50eff2f14592": {
+        "id": "c7881392-174b-4894-9804-50eff2f14592",
+        "parent": "74b9eab5-b95d-4608-a99d-6b9a6b60c716",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Retest485/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "cweKTestSQSRule1",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "74b9eab5-b95d-4608-a99d-6b9a6b60c716",
+    "openFiles": [
+      "c7881392-174b-4894-9804-50eff2f14592"
+    ],
+    "currentFileId": "c7881392-174b-4894-9804-50eff2f14592",
+    "resources": {
+      "cweKTestSQSRule1": {
+        "name": "cweKTestSQSRule1",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:318300609668:rule/KTestSQSRule1",
+          "name": "KTestSQSRule1"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "Retest485",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1559195696276
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "Retest485",
+      "url": "https://github.com/Kumudikatest/Retest485"
+    }
+  }
+}
